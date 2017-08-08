@@ -17,11 +17,11 @@ The 'Clean up' option removes all downloaded files and 'Quit' exits roothelper.\
 # Download and unzip
 function dzip()
 {    echo "Downloading and extracting scripts..."
-    `wget -O /tmp/ExploitSuggest.py http://www.securitysift.com/download/linuxprivchecker.py`
-    `wget -O /tmp/LinEnum.zip https://github.com/rebootuser/LinEnum/archive/master.zip`                  
-    `wget -O /tmp/ExploitSuggest_perl.zip https://github.com/PenturaLabs/Linux_Exploit_Suggester/archive/master.zip`  
-    `wget -O /tmp/unixprivesc.zip https://github.com/pentestmonkey/unix-privesc-check/archive/1_x.zip`
-    `wget -O /tmp/firmwalker.zip https://github.com/craigz28/firmwalker/archive/master.zip`
+    `wget -O /tmp/ExploitSuggest.py http://10.11.0.154/tools/RootHelper/walkers/ExploitSuggest.py`
+    `wget -O /tmp/LinEnum.zip http://10.11.0.154/tools/RootHelper/walkers/LinEnum.zip`                  
+    `wget -O /tmp/ExploitSuggest_perl.zip http://10.11.0.154/tools/RootHelper/walkers/ExploitSuggest_perl.zip`  
+    `wget -O /tmp/unixprivesc.zip http://10.11.0.154/tools/RootHelper/walkers/unixprivesc.zip`
+    `wget -O /tmp/firmwalker.zip http://10.11.0.154/tools/RootHelper/walkers/firmwalker.zip`
     for zip in *.zip
     do
         dirname=`echo $zip | sed 's/\.zip$//'`
@@ -58,11 +58,11 @@ do
             ;;
         "Download")
             echo "Downloading scripts to /tmp/"
-            `wget -O /tmp/ExploitSuggest.py http://www.securitysift.com/download/linuxprivchecker.py`
-            `wget -O /tmp/LinEnum.zip https://github.com/rebootuser/LinEnum/archive/master.zip`                  
-            `wget -O /tmp/ExploitSuggest_perl.zip https://github.com/PenturaLabs/Linux_Exploit_Suggester/archive/master.zip`
-            `wget -O /tmp/unixprivesc.zip https://github.com/pentestmonkey/unix-privesc-check/archive/1_x.zip`
-            `wget -O /tmp/firmwalker.zip https://github.com/craigz28/firmwalker/archive/master.zip`
+		`wget -O /tmp/ExploitSuggest.py http://10.11.0.154/tools/RootHelper/walkers/ExploitSuggest.py`
+		`wget -O /tmp/LinEnum.zip http://10.11.0.154/tools/RootHelper/walkers/LinEnum.zip`                  
+		`wget -O /tmp/ExploitSuggest_perl.zip http://10.11.0.154/tools/RootHelper/walkers/ExploitSuggest_perl.zip`  
+		`wget -O /tmp/unixprivesc.zip http://10.11.0.154/tools/RootHelper/walkers/unixprivesc.zip`
+		`wget -O /tmp/firmwalker.zip http://10.11.0.154/tools/RootHelper/walkers/firmwalker.zip`
              printf "%b \n"
             ;;
         "Download and unzip")
