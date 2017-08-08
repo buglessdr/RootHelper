@@ -118,7 +118,7 @@ do
 		    echo 'Finished LinEnum.sh Failed!'
 		fi 
 		
-		output5=$(/tmp/unix-privesc-check-1_x/unix-privesc-check standard)
+		output5=$(/tmp/unixprivesc/unix-privesc-check-1_x/unix-privesc-check standard)
 		echo "$output5" > /tmp/results/unix-privesc-check-STANDARD.txt
 	        if [[ ! -z $output5 ]]; then
 		    echo 'Finished unix-privesc-check Succesful (Note this is only Standard MODE)!'
